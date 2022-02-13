@@ -169,7 +169,7 @@ local source_mapping = {
 }
 local lspkind = require('lspkind')
 require'lspkind'.init({
-  with_text = true,
+  mode = true,
 })
 local luasnip = require('luasnip')
 local cmp = require('cmp')
