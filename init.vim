@@ -91,7 +91,7 @@ nmap <A-k> [e
 nmap <A-j> ]e
 vmap <A-k> [egv
 vmap <A-j> ]egv
-nnoremap <leader>pv :Ex<CR>
+nnoremap <leader>e :Ex<CR>
 "telescope
 "git
 nnoremap <C-p> :lua require('telescope.builtin').git_files()<CR>
