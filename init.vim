@@ -252,10 +252,7 @@ end
 require'nvim-treesitter.configs'.setup { highlight = { enable = true } }
 require('lspconfig').pylsp.setup{}
 require('lspconfig').rust_analyzer.setup{}
---require('lspconfig').rust_analyzer.setup(config({
---cmd = { "rustup", "run", "nightly", "rust-analyzer"},
---root_di = root_pattern("Cargo.toml", "rust-project.json")
---}))
+require('lspconfig').tsserver.setup{}
 END
 
 
