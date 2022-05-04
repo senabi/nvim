@@ -29,6 +29,10 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'folke/lsp-colors.nvim'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-commentary'
+" Plug 'overcache/NeoSolarized'
+" Plug 'altercation/vim-colors-solarized'
+" Plug 'ericbn/vim-solarized'
+Plug 'lifepillar/vim-solarized8'
 call plug#end()
 
 "Sets
@@ -81,9 +85,13 @@ set wildignore+=**/.git/*
 " Set completeopt to have a better completion experience
 set completeopt=menu,menuone,noselect
 
-colorscheme nord
-highlight Normal guibg=#212121
-highlight SignColumn guibg=#212121
+" colorscheme NeoSolarized
+" highlight Normal guibg=#212121
+" highlight SignColumn guibg=#212121
+let g:solarized_termcolors=256
+" syntax enable
+" set background=dark
+colorscheme solarized8
 
 let mapleader = " "
 "move lines
