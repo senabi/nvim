@@ -251,6 +251,9 @@ tabnine:setup({
   sort = true;
   run_on_every_keystroke = true;
   snippet_placeholder = '..';
+  ignored_file_types = {
+    markdown = true
+  };
 })
 local function config(_config)
   return vim.tbl_deep_extend("force", {
